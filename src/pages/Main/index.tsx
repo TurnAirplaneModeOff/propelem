@@ -121,12 +121,12 @@ const MainPage = () => {
 export default MainPage;
 
 
-const section7 = 'bg-[#c5b7af] h-[770px] w-screen flex justify-center pt-28 pb-14 font-lato lg:h-[1350px] md:h-[100%]'
+const section7 = 'bg-[#c5b7af] h-[770px] w-screen flex justify-center pt-28 pb-14 font-lato xl:h-[1350px] md:h-[100%]'
 const title7 = 'text-[#f4f1ed] text-head font-light text-center mb-[30px] px-[4%] font-gilda lg:text-headLg md:text-headMg sm:text-headSm'
 const text7 = 'text-[#f4f1ed] text-p text-justify self-center px-[4%] mb-10 text-[#623e2a] font-gilda md:text-pMg sm:text-pSm'
-const infoContainer = 'flex justify-between items-center mb-10 lg:flex-col'
+const infoContainer = 'flex justify-between items-center mb-10 xl:flex-col'
 const infoItem = 'flex-col justify-center items-start max-w-[360px] w-full h-[260px] p-5 border border-white'
-const infoItemPlace = 'flex justify-center items-center max-w-[360px] w-full h-[260px] border border-white lg:my-[30px]'
+const infoItemPlace = 'flex justify-center items-center max-w-[360px] w-full h-[260px] border border-white xl:my-[30px]'
 const textFooter1 = 'text-[#f4f1ed] text-textFooter mt-[40px] mb-[10px] font-light text-center font-gilda lg:text-textFooterLg md:text-textFooterMg sm:text-textFooterSm'
 const textFooter2 = 'text-[#f4f1ed] text-p font-light text-center font-gilda lg:text-pLg md:text-pMg sm:text-pSm'
 
