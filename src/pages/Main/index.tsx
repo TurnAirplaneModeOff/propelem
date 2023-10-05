@@ -7,6 +7,46 @@ import GoogleMaps from "./officeplace";
 
 const MainPage = () => {
 
+    const jobOpportunities = [
+        {
+            id: 1,
+            name: 'Accounting/Bookkeeping',
+            description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from'
+        },
+        {
+            id: 2,
+            name: 'Digital Forensics',
+            description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from'        },
+        {
+            id: 3,
+            name: 'Legal Internship',
+            description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from'        },
+        {
+            id: 4,
+            name: 'Attorney',
+            description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from'        },
+        {
+            id: 5,
+            name: 'Client Care/Intake Specialist',
+            description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from'        },
+        {
+            id: 6,
+            name: 'Translator/Interpreters',
+            description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from'        },
+        {
+            id: 7,
+            name: 'Social Media Manager',
+            description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from'        },
+        {
+            id: 8,
+            name: 'Marketing Internship',
+            description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from'        },
+        {
+            id: 9,
+            name: 'Paralegal',
+            description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from'        }
+    ]
+
     const officeInfo = [
         {
             id: 'place',
@@ -82,6 +122,23 @@ const MainPage = () => {
                 </div>
             </section>
 
+
+            <section className={section8} >
+                <div className={wrapper3}>
+                    <h1 className={title8}>Job Opportunities</h1>
+                    <div className={itemsContainer}>
+                        {jobOpportunities.map((item) =>
+                            <div className={jobItem} key={item.id}>
+                                <div className={jobNumber}>{item.id < 10 ? `0${item.id}.` : `${item.id}.`}</div>
+                                <h1 className={jobName}>{item.name}</h1>
+                                <h2 className={jobDescription}>{item.description}</h2>
+                                <button className={applyBtn}><NavLink to={`/form`}>Apply</NavLink></button>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </section>
+
             <section className={section7}>
                 <div className={wrapper}>
                     <h1 className={title7}>So what are you waiting for?</h1>
@@ -93,7 +150,6 @@ const MainPage = () => {
                                 <div key={info.id} className={officeInfoItem}>
                                     <img className={imgItem} src={info.img} alt={info.id} />
                                     <div className={textItem}>{info.info}</div>
-
                                 </div>
                             )}
                         </div>
@@ -107,12 +163,13 @@ const MainPage = () => {
 
                         </div>
                     </div>
-                    <h2 className={textFooter1}>Propel, Inc.</h2>
+                    <div className={loginBlock}>
+                        <h2 className={textFooter1}>Propel, Inc.</h2>
+                        <button className={loginBtn}><NavLink to={`/login`}>Login</NavLink></button>
+                    </div>
                     <h2 className={textFooter2}>© 2020-2023  | <NavLink to={`/policy`}>Legal Notices</NavLink></h2>
                 </div>
             </section>
-
-
         </section>
 
     );
@@ -127,8 +184,21 @@ const text7 = 'text-[#f4f1ed] text-p text-justify self-center px-[4%] mb-10 text
 const infoContainer = 'flex justify-between items-center mb-10 xl:flex-col'
 const infoItem = 'flex-col justify-center items-start max-w-[360px] w-full h-[260px] p-5 border border-white'
 const infoItemPlace = 'flex justify-center items-center max-w-[360px] w-full h-[260px] border border-white xl:my-[30px]'
-const textFooter1 = 'text-[#f4f1ed] text-textFooter mt-[40px] mb-[10px] font-light text-center font-gilda lg:text-textFooterLg md:text-textFooterMg sm:text-textFooterSm'
+const loginBlock = 'flex justify-center items-center mt-[40px] mb-[10px]'
+const loginBtn = 'ml-10 rounded-lg px-4 py-2 w-[120px] bg-[#9e928c] text-gray-100 hover:bg-[#8a807a] duration-300 font-gilda text-p'
+const textFooter1 = 'text-[#f4f1ed] text-textFooter font-light text-center font-gilda lg:text-textFooterLg md:text-textFooterMg sm:text-textFooterSm'
 const textFooter2 = 'text-[#f4f1ed] text-p font-light text-center font-gilda lg:text-pLg md:text-pMg sm:text-pSm'
+
+const section8 = 'bg-[#f0c7bb] h-full w-screen flex justify-center pt-28 pb-14 font-lato'
+const wrapper3 = 'flex flex-col items-center w-full max-w-[1240px]'
+const title8 = 'text-[#f4f1ed] text-head font-light self-start mb-[30px] px-[4%] font-gilda lg:text-headLg self-center md:text-headMg sm:text-headSm'
+const itemsContainer = 'flex flex-wrap justify-between gap-[50px] mb-10 xl:justify-center'
+const jobItem = 'flex-col items-center max-w-[360px] w-full'
+const jobNumber = 'border-b border-black text-black font-gilda text-p'
+const jobName = 'text-black text-cardTextHead text-center my-5 text-[#623e2a] font-gilda'
+const jobDescription = 'text-black text-justify text-cardTextP font-gilda'
+const applyBtn = 'py-1 hover:border-b border-black text-black text-cardTextP mt-5 hover:-mb-[1px] font-gilda'
+
 
 const cardHead = 'text-[#f4f1ed] text-cardTextHead text-justify self-center px-[4%] mb-10 text-[#623e2a] font-gilda'
 const officeInfoItem = 'flex justify-start items-center px-[4%] mb-[10px]'

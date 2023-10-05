@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import ErrorPage from './pages/ErrorPage';
 import Policy from './pages/Policy/Index.tsx';
+import Form from "./pages/JobForm";
+import Login from "./pages/LoginForm";
 
 const router = createBrowserRouter([
   {
@@ -16,8 +18,18 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
+    path: '/login',
+    element: <Login />,
+    errorElement: <ErrorPage/>
+  },
+  {
     path: "/policy",
     element: <Policy />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/form",
+    element: <Form />,
     errorElement: <ErrorPage />,
   },
 ]);
