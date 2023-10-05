@@ -4,6 +4,9 @@ import bg2 from '../../assets/Images/bg-2.webp'
 import bg3 from '../../assets/Images/bg-3.webp'
 import bg4 from '../../assets/Images/bg-4.webp'
 import GoogleMaps from "./officeplace";
+import iconEmail from "../../assets/Icons/email.svg";
+import iconPhone from "../../assets/Icons/phone.svg";
+import iconPlace from "../../assets/Icons/place.svg";
 
 const MainPage = () => {
 
@@ -50,19 +53,19 @@ const MainPage = () => {
     const officeInfo = [
         {
             id: 'place',
-            img: 'src/assets/Icons/place.svg',
+            img: iconPlace,
             info: '4540 Campus Drive, Suite 500\n' +
                 '\n' +
                 'Newport Beach, CA 92660'
         },
         {
             id: 'phone',
-            img: 'src/assets/Icons/phone.svg',
+            img: iconPhone,
             info: '949-779-2300'
         },
         {
             id: 'email',
-            img: 'src/assets/Icons/email.svg',
+            img: iconEmail,
             info: 'office@propelem.com'
         }
     ]
