@@ -27,12 +27,25 @@ export default {
       'headSm': ['36px', {
         lineHeight: '36px',
       }],
+      'head2': ['48px', {
+        lineHeight: '48px',
+      }],
+      'headLg2': ['44px', {
+        lineHeight: '44px',
+      }],
+      'headMd2': ['40px', {
+        lineHeight: '40px',
+      }],
+      'headSm2': ['32px', {
+        lineHeight: '32px',
+      }],
       'textFooter': '48px',
       'textFooterLg': '44px',
       'textFooterMg': '42px',
       'textFooterSm': '32px',
       'cardTextHead': '24px',
       'cardTextP': '18px'
+
     },
     extend: {
       fontFamily: {

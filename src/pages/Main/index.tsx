@@ -169,6 +169,8 @@ const MainPage = () => {
                     <div className={loginBlock}>
                         <h2 className={textFooter1}>Propel, Inc.</h2>
                         <button className={loginBtn}><NavLink to={`/login`}>Login</NavLink></button>
+                        <button className={loginBtn}><NavLink to={`/registration`}>Registration</NavLink></button>
+                        <button className={loginBtn}><NavLink to={`/userInfo`}>userInfo</NavLink></button>
                     </div>
                     <h2 className={textFooter2}>© 2020-2023  | <NavLink to={`/policy`}>Legal Notices</NavLink></h2>
                 </div>
@@ -188,13 +190,13 @@ const infoContainer = 'flex justify-between items-center mb-10 xl:flex-col'
 const infoItem = 'flex-col justify-center items-start max-w-[360px] w-full h-[260px] p-5 border border-white'
 const infoItemPlace = 'flex justify-center items-center max-w-[360px] w-full h-[260px] border border-white xl:my-[30px]'
 const loginBlock = 'flex justify-center items-center mt-[40px] mb-[10px]'
-const loginBtn = 'ml-10 rounded-lg px-4 py-2 w-[120px] bg-[#9e928c] text-gray-100 hover:bg-[#8a807a] duration-300 font-gilda text-p'
+const loginBtn = 'ml-10 rounded-lg px-4 py-2 bg-[#9e928c] text-gray-100 hover:bg-[#8a807a] duration-300 font-gilda text-p'
 const textFooter1 = 'text-[#f4f1ed] text-textFooter font-light text-center font-gilda lg:text-textFooterLg md:text-textFooterMg sm:text-textFooterSm'
 const textFooter2 = 'text-[#f4f1ed] text-p font-light text-center font-gilda lg:text-pLg md:text-pMg sm:text-pSm'
 
 const section8 = 'bg-[#f0c7bb] h-full w-screen flex justify-center pt-28 pb-14 font-lato'
 const wrapper3 = 'flex flex-col items-center w-full max-w-[1240px]'
-const title8 = 'text-[#f4f1ed] text-head font-light self-start mb-[30px] px-[4%] font-gilda lg:text-headLg self-center md:text-headMg sm:text-headSm'
+const title8 = 'text-[#f4f1ed] text-head font-light mb-[30px] px-[4%] font-gilda lg:text-headLg self-center md:text-headMg sm:text-headSm'
 const itemsContainer = 'flex flex-wrap justify-between gap-[50px] mb-10 xl:justify-center'
 const jobItem = 'flex-col items-center max-w-[360px] w-full'
 const jobNumber = 'border-b border-black text-black font-gilda text-p'
