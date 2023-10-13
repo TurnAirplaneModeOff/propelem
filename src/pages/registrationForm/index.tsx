@@ -27,11 +27,10 @@ const Registration = () => {
                     <form className={loginForm} onSubmit={handleSubmit(onSubmit)}>
 
                         <div className={controlBlock}>
-                            <label htmlFor="email" className={controlLabel}>First name</label>
+                            <label className={controlLabel}>First name</label>
                             <input
                                 className={controlInput + `${errors.firstName ? ' border-red-500' : ''}`}
                                 type="text"
-                                id="email"
                                 placeholder="Username or Email"
                                 {...register("firstName", {
                                     required: "FirstName is required"
@@ -41,11 +40,10 @@ const Registration = () => {
                         </div>
 
                         <div className={controlBlock}>
-                            <label htmlFor="email" className={controlLabel}>Last name</label>
+                            <label className={controlLabel}>Last name</label>
                             <input
                                 className={controlInput + `${errors.lastName ? ' border-red-500' : ''}`}
                                 type="text"
-                                id="email"
                                 placeholder="Username or Email"
                                 {...register("lastName", {
                                     required: "LastName is required"
@@ -55,11 +53,10 @@ const Registration = () => {
                         </div>
 
                         <div className={controlBlock}>
-                            <label htmlFor="email" className={controlLabel}>Email</label>
+                            <label className={controlLabel}>Email</label>
                             <input
                                 className={controlInput + `${errors.email ? ' border-red-500' : ''}`}
                                 type="email"
-                                id="email"
                                 placeholder="Username or Email"
                                 {...register("email", {
                                     required: "Email is required",
@@ -73,7 +70,7 @@ const Registration = () => {
                         </div>
 
                         <div className={controlBlock}>
-                            <label htmlFor="password" className={controlLabel}>Password</label>
+                            <label className={controlLabel}>Password</label>
                             <div className={passwordWrapper}>
                                 <input
                                     className={controlInput + `${errors.password ? ' border-red-500' : ''}`}
@@ -104,7 +101,7 @@ const Registration = () => {
                         </div>
 
                         <div className={controlBlock}>
-                            <label htmlFor="password" className={controlLabel}>Confirm password</label>
+                            <label className={controlLabel}>Confirm password</label>
                             <div className={passwordWrapper}>
                                 <input
                                     className={controlInput + `${errors.confirmPassword ? ' border-red-500' : ''}`}

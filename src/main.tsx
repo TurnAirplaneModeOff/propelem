@@ -12,12 +12,18 @@ import Form from "./pages/JobForm";
 import Login from "./pages/LoginForm";
 import Registration from "./pages/registrationForm";
 import UserInfo from "./pages/userInfo/userInfo.tsx";
+import AdminPage from "./pages/Admin";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: '/admin',
+    element: <AdminPage />,
+    errorElement: <ErrorPage/>
   },
   {
     path: '/login',

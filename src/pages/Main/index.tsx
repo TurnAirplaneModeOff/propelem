@@ -171,6 +171,7 @@ const MainPage = () => {
                         <button className={loginBtn}><NavLink to={`/login`}>Login</NavLink></button>
                         <button className={loginBtn}><NavLink to={`/registration`}>Registration</NavLink></button>
                         <button className={loginBtn}><NavLink to={`/userInfo`}>userInfo</NavLink></button>
+                        <button className={loginBtn}><NavLink to={`/admin`}>AdminPage</NavLink></button>
                     </div>
                     <h2 className={textFooter2}>© 2020-2023  | <NavLink to={`/policy`}>Legal Notices</NavLink></h2>
                 </div>
